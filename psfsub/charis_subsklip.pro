@@ -721,8 +721,8 @@ endif
              ;perturbed KL models,k
              dpc[k,*]=dpc[k,*]/sqrt(eigenval[k])
              coeff_oversub=total(reform(optreg_fwd[*,nf]*reform(pc[k,*]))) ;<S|KL>
-             coeff_selfsub1=total(reform(optreg_fwd[*,nf]*reform(dpc[k,*])))   ;<N|DKL>
-             coeff_selfsub2=total(reform(optreg_fwd[*,nf]*reform(pc[k,*])))    ;<N|KL>
+             coeff_selfsub1=total(reform(optreg[*,nf]*reform(dpc[k,*])))   ;<N|DKL>
+             coeff_selfsub2=total(reform(optreg[*,nf]*reform(pc[k,*])))    ;<N|KL>
              ref_fwd[igoodf]=ref_fwd[igoodf]+coeff_oversub*reform(pc[k,*])+$
                 ;0*coeff_selfsub1*reform(pc[k,*])/61944.1 + $
                 1.*coeff_selfsub1*reform(pc[k,*]) + $

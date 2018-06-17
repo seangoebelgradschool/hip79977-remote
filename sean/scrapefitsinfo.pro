@@ -3,7 +3,9 @@ pro scrapefitsinfo
 
   dirs = ['/home/sgoebel/thayne/pipeline/charisred/reduc/proc/model_psfsub/',$
           '/home/sgoebel/thayne/pipeline/copy2/reduc/proc/model_psfsub/',$
-          '/home/sgoebel/thayne/pipeline/copy3/reduc/proc/model_psfsub/']
+          '/home/sgoebel/thayne/pipeline/copy3/reduc/proc/model_psfsub/',$
+          '/home/sgoebel/thayne/pipeline/copy4/reduc/proc/model_psfsub/',$
+          '/home/sgoebel/thayne/pipeline/copy5/reduc/proc/model_psfsub/']
 
   openw,unit, '/home/sgoebel/thayne/pipeline/charisred/grid_search_stats.txt', /get_lun
 
@@ -13,6 +15,9 @@ pro scrapefitsinfo
      print, "Working on directory ", strcompress(i+1, /remove), " of ", strcompress(n_elements(dirs),/remove), "."
      
      result=file_search(dirs[i]+'*fits', count=count)
+     ;find files created in last day
+     ;spawn, 'find '+dirs[i]+'*fits -maxdepth 1 -mtime -1', result
+     ;count = n_elements(result)
      ;spawn, 'ls -t '+dirs[i]+'*.fits', result
      ;result = result[0:3]
      ;count = 4

@@ -22,7 +22,7 @@ if (N_PARAMS() eq 0 or keyword_set(help) or keyword_set(guide)) then begin
 
 Print,'Calibrate Photometric Flux subroutine'
 Print,'This program does flux calibration for a CHARIS datacube or sequence of data cubes'
-Print,' using data of a known star taken with a similar setup
+Print,' using data of a known star taken with a similar setup'
 Print,'  '
 Print,'****Calling Sequence ****'
 Print,'  '
@@ -63,7 +63,6 @@ reducdir+=subdir
 param,'HMAG',hmag,/get,pfname=pfname
 param,'EHMAG',ehmag,/get,pfname=pfname
 param,'SPTYPE',spt,/get,pfname=pfname
-
 
 ;identify the aperture radius if you haven't already
 ;correction*: just use the FWHM of the image
@@ -331,7 +330,7 @@ aper, imslice,cens[0,3,il],cens[1,3,il],flux,eflux,sky,skyerr,phpadu,aperradf,sa
        dist_circle,mask2,dimcal[0],[cens[0,1,il],cens[1,1,il]]
        dist_circle,mask3,dimcal[0],[cens[0,2,il],cens[1,2,il]]
        dist_circle,mask4,dimcal[0],[cens[0,3,il],cens[1,3,il]]
-       masksat=where(mask1 le aperrad or mask2 le aperrad or mask3 le aperrad or mask4 le aperrad,nmasksat)
+       masksat=where(mask1 le aperradf or mask2 le aperradf or mask3 le aperradf or mask4 le aperradf,nmasksat)
        imslicemask[masksat]=!values.f_nan
        ;help,imslicemask
        snratio_sub,imslicemask,fwhm=aperradf*2,/finite,noisemap=noisemap_slice,/silent

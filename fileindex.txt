@@ -1,6 +1,7 @@
 cals/get_charis_sat_contrast.pro
 cals/get_charis_wvlh.pro
 filt/charis_imrsub.pro
+partialsub/charis_klip_disk_fwdmod_borked.pro
 partialsub/charis_klip_disk_fwdmod.pro
 partialsub/charis_klip_disk_fwdmod_reverted.pro
 partialsub/charis_selfsub_planet.pro
@@ -17,6 +18,8 @@ sean/elfit.pro
 sean/klipgrid.pro
 sean/scrapefitsinfo.pro
 skysub/charis_subtract_sky.pro
+specphotcal/calc_disk_sb_old.pro
+specphotcal/calc_disk_sb.pro
 specphotcal/charis_extract_1d_spectrum.pro
 specphotcal/charis_get_phot_zeropoint.pro
 specphotcal/charis_makeemppsf.pro
@@ -34,3 +37,5 @@ syndisks/scimage.pro
 tools/charis_calc_analysis.pro
 tools/charis_calc_final_contrast.pro
 tools/charis_calc_raw_contrast.pro
+tools/mpfitpeak.pro
+tools/setcolors.pro

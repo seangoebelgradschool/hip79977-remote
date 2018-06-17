@@ -13,7 +13,7 @@ diagnostic=diagnostic
 ;****Filter Responses for color corrections
 ;standard filter response functions subdirectory
 ;we are going to use the MKO H band filter for color corrections.
-filtresponsedir='~/Research/Planets/DI/filter_response/'
+filtresponsedir='../../external/filter_response/'
 charis_std_filter='Hband'
 readcol,filtresponsedir+charis_std_filter+'.dat',charis_std_filter_wvlh,charis_std_filter_response
 
@@ -27,7 +27,7 @@ charis_std_filter_wvlh=charis_std_filter_wvlh(sort(charis_std_filter_wvlh))
 
 
 ;****change the model directory to your path!!!****
-modelspecdir='~/idl_tools/gpi_pipeline/pipeline/config/pickles/'
+modelspecdir='../../external/pickles/'
 readcol,modelspecdir+'AA_README',pickles_fnames,pickles_sptypes,pickles_temps,skipline=113,numline=79,format=('A,A,F'),/silent
 
  for i=0L,n_elements(pickles_fnames)-1 do begin
