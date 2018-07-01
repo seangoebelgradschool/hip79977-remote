@@ -16,6 +16,7 @@ reg/charis_imregister.pro
 sean/batchsnr.pro
 sean/elfit.pro
 sean/klipgrid.pro
+sean/recalcchisq.pro
 sean/scrapefitsinfo.pro
 skysub/charis_subtract_sky.pro
 specphotcal/calc_disk_sb_old.pro

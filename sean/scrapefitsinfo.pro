@@ -1,11 +1,14 @@
 pro scrapefitsinfo
 ; Scrapes disk parameter information from fits headers and prints it to a txt document.
 
-  dirs = ['/home/sgoebel/thayne/pipeline/charisred/reduc/proc/model_psfsub/',$
-          '/home/sgoebel/thayne/pipeline/copy2/reduc/proc/model_psfsub/',$
-          '/home/sgoebel/thayne/pipeline/copy3/reduc/proc/model_psfsub/',$
-          '/home/sgoebel/thayne/pipeline/copy4/reduc/proc/model_psfsub/',$
-          '/home/sgoebel/thayne/pipeline/copy5/reduc/proc/model_psfsub/']
+  dirs = ['/home/sgoebel/thayne/pipeline/charisred/reduc/proc/model_psfsub/'];,$
+          ;'/home/sgoebel/thayne/pipeline/copy2/reduc/proc/model_psfsub/',$
+          ;'/home/sgoebel/thayne/pipeline/copy3/reduc/proc/model_psfsub/',$
+          ;'/home/sgoebel/thayne/pipeline/copy4/reduc/proc/model_psfsub/',$
+          ;'/home/sgoebel/thayne/pipeline/copy5/reduc/proc/model_psfsub/',$
+          ;'/home/sgoebel/thayne/pipeline/copy6/reduc/proc/model_psfsub/',$
+          ;'/home/sgoebel/thayne/pipeline/copy7/reduc/proc/model_psfsub/',$
+          ;'/home/sgoebel/thayne/pipeline/copy8/reduc/proc/model_psfsub/']
 
   openw,unit, '/home/sgoebel/thayne/pipeline/charisred/grid_search_stats.txt', /get_lun
 

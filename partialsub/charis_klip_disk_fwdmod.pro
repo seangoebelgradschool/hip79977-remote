@@ -334,10 +334,10 @@ if keyword_set(noreprocess) then begin
    spawn, 'mv /home/sgoebel/thayne/pipeline/copy6/reduc/proc/model_in/*fits /home/sgoebel/thayne/pipeline/charisred/reduc/proc/model_in/'
    spawn, 'mv /home/sgoebel/thayne/pipeline/copy6/reduc/proc/model_psfsub/*fits /home/sgoebel/thayne/pipeline/charisred/reduc/proc/model_psfsub/'
 
-spawn, 'mv /home/sgoebel/thayne/pipeline/copy7/reduc/proc/model_in/*fits /home/sgoebel/thayne/pipeline/charisred/reduc/proc/model_in/'
+   spawn, 'mv /home/sgoebel/thayne/pipeline/copy7/reduc/proc/model_in/*fits /home/sgoebel/thayne/pipeline/charisred/reduc/proc/model_in/'
    spawn, 'mv /home/sgoebel/thayne/pipeline/copy7/reduc/proc/model_psfsub/*fits /home/sgoebel/thayne/pipeline/charisred/reduc/proc/model_psfsub/'
 
-spawn, 'mv /home/sgoebel/thayne/pipeline/copy8/reduc/proc/model_in/*fits /home/sgoebel/thayne/pipeline/charisred/reduc/proc/model_in/'
+   spawn, 'mv /home/sgoebel/thayne/pipeline/copy8/reduc/proc/model_in/*fits /home/sgoebel/thayne/pipeline/charisred/reduc/proc/model_in/'
    spawn, 'mv /home/sgoebel/thayne/pipeline/copy8/reduc/proc/model_psfsub/*fits /home/sgoebel/thayne/pipeline/charisred/reduc/proc/model_psfsub/'
 
 
